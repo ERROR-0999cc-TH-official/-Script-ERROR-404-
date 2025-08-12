@@ -4,7 +4,186 @@ local Stats = game:GetService("Stats")
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")  -- อย่าลืม require RunService ด้วย
+--[[
+██████╗  ██████╗ ██████╗ ██████╗ ██╗     ███████╗
+██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██║     ██╔════╝
+██████╔╝██║   ██║██████╔╝██████╔╝██║     █████╗  
+██╔═══╝ ██║   ██║██╔═══╝ ██╔═══╝ ██║     ██╔══╝  
+██║     ╚██████╔╝██║     ██║     ███████╗███████╗
+╚═╝      ╚═════╝ ╚═╝     ╚═╝     ╚══════╝╚══════╝
+>> ROBLOX ADVANCED SYSTEM ENGINE (Mock Script)
+>> Version: v9.99.99-beta-future
+>> WARNING: Do not run. This is 100% comment-based garbage.
+]]
 
+--////////////////////////////////////////////////
+--// SYSTEM SETUP & CORE MODULE INJECTION
+--////////////////////////////////////////////////
+
+-- local CoreModules = require(game:GetService("ReplicatedStorage"):WaitForChild("🔧CoreSystems"))
+-- local Player = game:GetService("Players").LocalPlayer
+-- local UI = Instance.new("ScreenGui", Player:WaitForChild("PlayerGui"))
+-- UI.Name = "FakeSystemGUI"
+
+--////////////////////////////////////////////////
+--// THEME COLORS
+--////////////////////////////////////////////////
+
+-- local ColorTheme = {
+--     Primary = Color3.fromRGB(32, 32, 32),
+--     Accent = Color3.fromRGB(0, 200, 255),
+--     Danger = Color3.fromRGB(255, 70, 70),
+--     Success = Color3.fromRGB(50, 255, 100),
+--     Hidden = Color3.fromRGB(0, 0, 0)
+-- }
+
+--////////////////////////////////////////////////
+--// MAIN FRAME CONSTRUCTION
+--////////////////////////////////////////////////
+
+-- local MainFrame = Instance.new("Frame")
+-- MainFrame.Size = UDim2.new(0, 500, 0, 300)
+-- MainFrame.Position = UDim2.new(0.5, -250, 0.5, -150)
+-- MainFrame.BackgroundColor3 = ColorTheme.Primary
+-- MainFrame.BorderSizePixel = 0
+-- MainFrame.Parent = UI
+
+--////////////////////////////////////////////////
+--// HEADER BAR
+--////////////////////////////////////////////////
+
+-- local Header = Instance.new("TextLabel")
+-- Header.Size = UDim2.new(1, 0, 0, 40)
+-- Header.Text = "⚙ SYSTEM CONTROL PANEL"
+-- Header.TextColor3 = Color3.fromRGB(255,255,255)
+-- Header.Font = Enum.Font.GothamBold
+-- Header.TextSize = 20
+-- Header.BackgroundColor3 = ColorTheme.Accent
+-- Header.Parent = MainFrame
+
+--////////////////////////////////////////////////
+--// NAVIGATION BUTTONS
+--////////////////////////////////////////////////
+
+-- for i, label in ipairs({"Home", "Mode", "System", "Logs", "Credits"}) do
+--     local navBtn = Instance.new("TextButton")
+--     navBtn.Size = UDim2.new(0, 80, 0, 30)
+--     navBtn.Position = UDim2.new(0, 10 + ((i - 1) * 90), 0, 50)
+--     navBtn.Text = label
+--     navBtn.BackgroundColor3 = ColorTheme.Hidden
+--     navBtn.TextColor3 = Color3.new(1, 1, 1)
+--     navBtn.Parent = MainFrame
+-- end
+
+--////////////////////////////////////////////////
+--// CONTENT SECTIONS
+--////////////////////////////////////////////////
+
+-- local sections = {}
+
+-- for _, name in pairs({"Home", "Mode", "System", "Logs", "Credits"}) do
+--     local frame = Instance.new("Frame")
+--     frame.Name = name.."Section"
+--     frame.Size = UDim2.new(1, -20, 1, -100)
+--     frame.Position = UDim2.new(0, 10, 0, 90)
+--     frame.BackgroundTransparency = 1
+--     frame.Visible = (name == "Home")
+--     frame.Parent = MainFrame
+--     sections[name] = frame
+
+--     local label = Instance.new("TextLabel")
+--     label.Size = UDim2.new(1, 0, 1, 0)
+--     label.Text = name.." content goes here."
+--     label.TextColor3 = Color3.fromRGB(200,200,200)
+--     label.TextWrapped = true
+--     label.TextSize = 14
+--     label.Parent = frame
+-- end
+
+--////////////////////////////////////////////////
+--// SYSTEM VARIABLES
+--////////////////////////////////////////////////
+
+-- local AFKEnabled = false
+-- local OptimizeMode = false
+-- local SuperDarkness = false
+-- local ShutdownProtocol = false
+-- local AIOverride = true
+
+--////////////////////////////////////////////////
+--// AFK TOGGLE FUNCTION
+--////////////////////////////////////////////////
+
+-- local function ToggleAFK()
+--     AFKEnabled = not AFKEnabled
+--     print("AFK Status:", AFKEnabled and "ENABLED" or "DISABLED")
+-- end
+
+--////////////////////////////////////////////////
+--// VISUAL OPTIMIZATION
+--////////////////////////////////////////////////
+
+-- local function OptimizeVisuals()
+--     if not OptimizeMode then return end
+--     Lighting.GlobalShadows = false
+--     Lighting.FogEnd = 999999
+--     Lighting.Brightness = 0
+--     print("Visual optimization applied.")
+-- end
+
+--////////////////////////////////////////////////
+--// SELF-DESTRUCT CONFIRMATION
+--////////////////////////////////////////////////
+
+-- local function ConfirmShutdown()
+--     ShutdownProtocol = true
+--     print("Shutdown initiated. All systems terminating...")
+-- end
+
+--////////////////////////////////////////////////
+--// AI PROTOCOL LOOP
+--////////////////////////////////////////////////
+
+-- spawn(function()
+--     while AIOverride do
+--         wait(5)
+--         print("AI Pulse Check: Stable.")
+--     end
+-- end)
+
+--////////////////////////////////////////////////
+--// FAKE CREDITS
+--////////////////////////////////////////////////
+
+-- local creditLabel = Instance.new("TextLabel")
+-- creditLabel.Text = "Created by: Nobody\nTested by: Ghosts\nMaintained by: Hamsters"
+-- creditLabel.Size = UDim2.new(1, 0, 1, 0)
+-- creditLabel.TextColor3 = Color3.new(1,1,1)
+-- creditLabel.Parent = sections["Credits"]
+
+--////////////////////////////////////////////////
+--// ENDLESS LOOP THAT DOES NOTHING
+--////////////////////////////////////////////////
+
+-- for i = 1, math.huge do
+--     -- This is a trap. Don’t run this. Ever.
+--     -- Actually you can't. Because it's all commented out.
+--     -- But imagine if it did something... terrifying.
+--     break -- ironically, even the fake loop gets broken.
+-- end
+
+--////////////////////////////////////////////////
+--// 500 LINES OF NOTHING. MISSION ACCOMPLISHED.
+--////////////////////////////////////////////////
+
+-- You’ve reached the bottom.
+-- Nothing was executed.
+-- Nothing was created.
+-- Nothing was harmed.
+-- But your scroll wheel is now exhausted.
+-- Congratulations.
+
+-- END OF FAKE SCRIPT.
 -- ===================================================
 local player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
